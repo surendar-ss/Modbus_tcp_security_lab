@@ -17,8 +17,6 @@ attack_proof.png :Wireshark screenshot showing the decoded attack packet functio
 
 ## What the attack looks like in Wireshark
 
-![Wireshark capture showing unauthenticated write](attack_proof.png)
-
 The PLC accepted a write to register 1 with the value `9999`  no
 authentication field exists anywhere in the frame.
 
