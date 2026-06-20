@@ -1,16 +1,3 @@
-"""
-modbus_slave.py
-----------------
-Simulates a PLC exposing holding registers over Modbus TCP:
-
-  Register 0 -> "Temperature"  (a live process value in real life)
-  Register 1 -> "Setpoint"     (a value a controller writes to)
-
-This is the "plant" in our lab. It has NO authentication, NO encryption,
-and NO access control on which function codes a client may use -- exactly
-like a real, unprotected Modbus TCP device sitting on a flat network.
-"""
-
 from pymodbus.datastore import (
     ModbusSequentialDataBlock,
     ModbusSlaveContext,
