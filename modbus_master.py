@@ -1,14 +1,3 @@
-"""
-modbus_master.py
------------------
-Acts like a normal SCADA/HMI poller: connects to the PLC (our slave),
-reads the Temperature and Setpoint holding registers using function
-code 03 (Read Holding Registers), and prints them.
-
-This is the "legitimate traffic" baseline. Run this AFTER modbus_slave.py
-is already running.
-"""
-
 from pymodbus.client.sync import ModbusTcpClient
 
 HOST = "127.0.0.1"
